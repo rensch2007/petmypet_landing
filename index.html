@@ -11,14 +11,12 @@
 </head>
 <body>
 
-<!-- =========================================================
-     HEADER
-     ========================================================= -->
+<!-- HEADER -->
 <header class="header" role="banner">
   <div class="container">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="PetMyPet Home">
-        <div class="logo-icon" aria-hidden="true">🐾</div>
+        <img src="images/logo.png" alt="PetMyPet Logo" />
         PetMyPet
       </a>
       <nav class="nav" aria-label="Main navigation">
@@ -32,21 +30,10 @@
       </button>
     </div>
   </div>
-  <nav class="mobile-nav" aria-label="Mobile navigation">
-    <a href="#features">Features</a>
-    <a href="#how-it-works">How It Works</a>
-    <a href="#screenshots">Screenshots</a>
-    <a href="#download">Download</a>
-    <a href="#waitlist">Join Waitlist</a>
-  </nav>
 </header>
 
-<!-- =========================================================
-     HERO
-     ========================================================= -->
+<!-- HERO -->
 <section class="hero" id="home" aria-label="Hero">
-  <div class="hero-bg-gradient" aria-hidden="true"></div>
-  <div class="paw-bg" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
@@ -56,37 +43,25 @@
         <h1 class="fade-in fade-in-delay-1">
           Walk together,<br>
           track health, and<br>
-          <span class="accent">treasure every moment</span><br>
+          <span style="color: var(--primary)">treasure every moment</span><br>
           with your pet.
         </h1>
         <p class="fade-in fade-in-delay-2">
           PetMyPet is the all-in-one companion app for pet owners — GPS walk tracking, health management, vet prep, and playdate discovery, all in one warm and friendly place.
         </p>
         <div class="hero-actions fade-in fade-in-delay-3" id="download">
-          <a href="#" class="store-btn" aria-label="Download on the App Store">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <div class="store-btn-text">
-              <small>Download on the</small>
-              <span>App Store</span>
-            </div>
+          <a href="#" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
           </a>
-          <a href="#" class="store-btn" aria-label="Get it on Google Play">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.37.2.8.22 1.2.06l12.11-6.97-2.55-2.55-10.76 9.46zM20.7 10.06L17.6 8.28 14.77 11l2.84 2.84 3.09-1.78c.88-.51.88-1.49 0-2zM2.01 1.05C1.84 1.3 1.75 1.62 1.75 2v20c0 .38.09.7.26.95l.11.1 11.2-11.2v-.26L2.12.95l-.11.1zM14.77 13.72L3.38 25.11c.4.16.83.14 1.2-.06l12.11-6.97-1.92-4.36z"/></svg>
-            <div class="store-btn-text">
-              <small>Get it on</small>
-              <span>Google Play</span>
-            </div>
+          <a href="#" class="btn btn-outline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.2.8.22 1.2.06l12.11-6.97-2.55-2.55-10.76 9.46zM20.7 10.06L17.6 8.28 14.77 11l2.84 2.84 3.09-1.78c.88-.51.88-1.49 0-2zM2.01 1.05C1.84 1.3 1.75 1.62 1.75 2v20c0 .38.09.7.26.95l.11.1 11.2-11.2v-.26L2.12.95l-.11.1zM14.77 13.72L3.38 25.11c.4.16.83.14 1.2-.06l12.11-6.97-1.92-4.36z"/></svg>
+            Google Play
           </a>
         </div>
-        <form class="hero-waitlist fade-in fade-in-delay-4" aria-label="Join the waitlist">
-          <input type="email" placeholder="Enter your email address" aria-label="Email address" required />
-          <button type="submit" class="btn btn-outline">Join the Waitlist</button>
-        </form>
       </div>
-      <div class="hero-visual fade-in fade-in-delay-2" aria-hidden="true">
-        <div class="phone-mockup-wrap">
-          <div class="phone-mockup-deco"></div>
-          <div class="phone-mockup-deco2"></div>
+      <div class="hero-visual fade-in fade-in-delay-2">
+        <div class="hero-phone-container">
           <div class="phone-mockup">
             <div class="phone-screen">
               <div class="phone-notch"></div>
@@ -113,14 +88,6 @@
                     <div class="phone-ui-stat-val">🔥 7</div>
                     <div class="phone-ui-stat-label">Day streak</div>
                   </div>
-                  <div class="phone-ui-stat">
-                    <div class="phone-ui-stat-val">4.2kg</div>
-                    <div class="phone-ui-stat-label">Buddy's weight</div>
-                  </div>
-                  <div class="phone-ui-stat">
-                    <div class="phone-ui-stat-val">💉 2d</div>
-                    <div class="phone-ui-stat-label">Next vaccine</div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -131,659 +98,147 @@
   </div>
 </section>
 
-<!-- =========================================================
-     FEATURES
-     ========================================================= -->
-<section class="features section" id="features" aria-label="Features">
+<!-- FEATURES -->
+<section class="section" id="features">
   <div class="container">
     <div class="text-center fade-in">
-      <div class="section-tag">Features</div>
-      <h2 class="section-heading">Everything your pet's life needs</h2>
-      <p class="section-sub">From the morning walk to the vet visit — PetMyPet keeps you organized, connected, and motivated every step of the way.</p>
+      <h2 style="font-size: 3rem; margin-bottom: 16px;">Everything your pet's life needs</h2>
+      <p style="font-size: 1.2rem; color: var(--text-sec); max-width: 600px; margin: 0 auto 60px;">From the morning walk to the vet visit — PetMyPet keeps you organized, connected, and motivated every step of the way.</p>
     </div>
-
-    <!-- Feature 1: Walk Tracking -->
-    <div class="feature-block fade-in">
-      <div class="feature-content">
-        <div class="feature-icon-wrap" aria-hidden="true">🗺️</div>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <span class="feature-card-icon">🗺️</span>
         <h3>Walk Tracking</h3>
-        <p>Never lose a step. PetMyPet records every walk with live GPS routing, real-time stats, and smart activity markers so you can relive every adventure.</p>
-        <ul class="feature-list">
-          <li>Live GPS route tracking with real-time distance and duration</li>
-          <li>Activity markers for water breaks and play stops</li>
-          <li>Walk history with full route replay</li>
-          <li>Weather and air quality checks before heading out</li>
-          <li>Syncs with Apple Health and Google Health Connect</li>
-        </ul>
+        <p>Never lose a step. PetMyPet records every walk with live GPS routing, real-time stats, and smart activity markers.</p>
       </div>
-      <div class="feature-phone" aria-hidden="true">
-        <div class="feature-phone-mockup">
-          <div class="feature-phone-screen">
-            <div class="feature-phone-notch"></div>
-            <div class="fp-header">Live Walk 🟢</div>
-            <div class="fp-map">🗺️</div>
-            <div class="fp-card">
-              <div class="fp-card-title">Current Stats</div>
-              <div class="fp-row">
-                <span style="font-size:0.62rem;color:var(--text-sec)">1.4 km</span>
-                <span style="font-size:0.62rem;color:var(--text-sec)">18 min</span>
-                <span style="font-size:0.62rem;color:var(--text-sec)">5.2 km/h</span>
-              </div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-card-title">Activity Log</div>
-              <div style="display:flex;flex-direction:column;gap:4px;">
-                <div class="fp-row"><span style="font-size:0.6rem;color:var(--text-sec)">💧 Water break</span><span style="font-size:0.6rem;color:var(--muted)">0.3km</span></div>
-                <div class="fp-row"><span style="font-size:0.6rem;color:var(--text-sec)">🎾 Play stop</span><span style="font-size:0.6rem;color:var(--muted)">0.9km</span></div>
-              </div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-row">
-                <div class="fp-tag-sage">☀️ 22°C</div>
-                <div class="fp-tag-orange">AQI: Good</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Feature 2: Health & Care (reversed) -->
-    <div class="feature-block reverse fade-in">
-      <div class="feature-content">
-        <div class="feature-icon-wrap" aria-hidden="true">🏥</div>
+      <div class="feature-card fade-in fade-in-delay-1">
+        <span class="feature-card-icon">🏥</span>
         <h3>Health &amp; Care</h3>
-        <p>Keep your pet's entire health history in one place. From symptom notes to vaccination schedules, PetMyPet helps you stay one step ahead of your pet's wellbeing.</p>
-        <ul class="feature-list">
-          <li>Health notes with symptom tags and severity tracking</li>
-          <li>Weight tracking with visual trend charts</li>
-          <li>Calendar for vet visits, vaccinations, medications, and grooming</li>
-          <li>Document storage for medical records and certificates</li>
-          <li>One-tap vet prep reports to share with your veterinarian</li>
-        </ul>
+        <p>Keep your pet's entire health history in one place. From symptom notes to vaccination schedules.</p>
       </div>
-      <div class="feature-phone" aria-hidden="true">
-        <div class="feature-phone-mockup">
-          <div class="feature-phone-screen">
-            <div class="feature-phone-notch"></div>
-            <div class="fp-header">Health Dashboard 🏥</div>
-            <div class="fp-card">
-              <div class="fp-card-title">Weight Trend</div>
-              <div class="fp-bar-wrap">
-                <div class="fp-bar"><div class="fp-bar-fill" style="width:60%;background:var(--sage)"></div></div>
-                <div class="fp-bar"><div class="fp-bar-fill" style="width:65%;background:var(--sage)"></div></div>
-                <div class="fp-bar"><div class="fp-bar-fill" style="width:62%;background:var(--sage)"></div></div>
-                <div class="fp-bar"><div class="fp-bar-fill" style="width:64%;background:var(--sage)"></div></div>
-              </div>
-              <div style="font-size:0.6rem;color:var(--muted);margin-top:4px;">4.1 → 4.2 → 4.1 → 4.2 kg</div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-card-title">Upcoming Events</div>
-              <div style="display:flex;flex-direction:column;gap:4px;">
-                <div class="fp-row"><span style="font-size:0.6rem">💉 Vaccination</span><div class="fp-tag">2 days</div></div>
-                <div class="fp-row"><span style="font-size:0.6rem">✂️ Grooming</span><div class="fp-tag-orange">1 week</div></div>
-                <div class="fp-row"><span style="font-size:0.6rem">🩺 Vet check</span><div class="fp-tag-sage">3 weeks</div></div>
-              </div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-card-title">Recent Note</div>
-              <div style="font-size:0.6rem;color:var(--text-sec);">Slight lethargy after walk</div>
-              <div style="display:flex;gap:3px;margin-top:4px;"><div class="fp-tag-orange">Lethargy</div><div class="fp-tag-sage">Mild</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Feature 3: Playdate Discovery -->
-    <div class="feature-block fade-in">
-      <div class="feature-content">
-        <div class="feature-icon-wrap" aria-hidden="true">🐕</div>
+      <div class="feature-card fade-in fade-in-delay-2">
+        <span class="feature-card-icon">🐕</span>
         <h3>Playdate Discovery</h3>
-        <p>Your pet deserves a best friend too. Find compatible playmates based on energy level, size, and temperament — then chat and arrange meetups with nearby pet owners.</p>
-        <ul class="feature-list">
-          <li>Smart matching based on energy level, size, and temperament</li>
-          <li>Real-time chat with matched pet owners</li>
-          <li>Propose and confirm meetup locations and times</li>
-          <li>Browse nearby pet profiles and community posts</li>
-        </ul>
+        <p>Your pet deserves a best friend too. Find compatible playmates based on energy level, size, and temperament.</p>
       </div>
-      <div class="feature-phone" aria-hidden="true">
-        <div class="feature-phone-mockup">
-          <div class="feature-phone-screen">
-            <div class="feature-phone-notch"></div>
-            <div class="fp-header">Nearby Playmates 🐕</div>
-            <div class="fp-card">
-              <div class="fp-row">
-                <div>
-                  <div class="fp-card-title">Max the Labrador</div>
-                  <div style="font-size:0.6rem;color:var(--text-sec)">0.4 km away</div>
-                </div>
-                <div class="fp-tag-sage">Match!</div>
-              </div>
-              <div style="display:flex;gap:3px;margin-top:6px;">
-                <div class="fp-tag">High energy</div>
-                <div class="fp-tag-orange">Large</div>
-              </div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-row">
-                <div>
-                  <div class="fp-card-title">Luna the Poodle</div>
-                  <div style="font-size:0.6rem;color:var(--text-sec)">0.8 km away</div>
-                </div>
-                <div class="fp-tag-sage">Match!</div>
-              </div>
-              <div style="display:flex;gap:3px;margin-top:6px;">
-                <div class="fp-tag">Playful</div>
-                <div class="fp-tag-orange">Medium</div>
-              </div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-card-title">💬 Recent Chat</div>
-              <div style="font-size:0.6rem;color:var(--text-sec);">"How about the park at 3pm?"</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Feature 4: Family Sharing (reversed) -->
-    <div class="feature-block reverse fade-in">
-      <div class="feature-content">
-        <div class="feature-icon-wrap" aria-hidden="true">👨‍👩‍👧</div>
+      <div class="feature-card fade-in fade-in-delay-3">
+        <span class="feature-card-icon">👨‍👩‍👧</span>
         <h3>Family Sharing</h3>
-        <p>Pet care is a team effort. Invite family members and caregivers to share pet profiles so everyone stays on the same page — no more missed medications or forgotten walks.</p>
-        <ul class="feature-list">
-          <li>Invite unlimited family members and caregivers</li>
-          <li>Shared view of walks, health events, and care schedules</li>
-          <li>Real-time updates when any family member logs an event</li>
-          <li>Role-based access — owners and caretakers</li>
-        </ul>
-      </div>
-      <div class="feature-phone" aria-hidden="true">
-        <div class="feature-phone-mockup">
-          <div class="feature-phone-screen">
-            <div class="feature-phone-notch"></div>
-            <div class="fp-header">Family Sharing 👨‍👩‍👧</div>
-            <div class="fp-card">
-              <div class="fp-card-title">Shared Pet: Buddy 🐶</div>
-              <div style="display:flex;gap:4px;margin-top:6px;align-items:center;">
-                <div class="fp-avatar" style="width:24px;height:24px;border-radius:50%;background:var(--primary);border:2px solid var(--white);"></div>
-                <div class="fp-avatar" style="width:24px;height:24px;border-radius:50%;background:var(--orange);border:2px solid var(--white);margin-left:-6px;"></div>
-                <div class="fp-avatar" style="width:24px;height:24px;border-radius:50%;background:var(--sage);border:2px solid var(--white);margin-left:-6px;"></div>
-                <span style="font-size:0.6rem;color:var(--text-sec);margin-left:4px;">3 members</span>
-              </div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-card-title">Today's Activity Feed</div>
-              <div style="display:flex;flex-direction:column;gap:4px;">
-                <div style="font-size:0.6rem;color:var(--text-sec)">🚶 Sarah walked Buddy — 2.1km</div>
-                <div style="font-size:0.6rem;color:var(--text-sec)">💊 Tom gave medication</div>
-                <div style="font-size:0.6rem;color:var(--text-sec)">🍽️ Mom logged feeding</div>
-              </div>
-            </div>
-            <div class="fp-card">
-              <div class="fp-row">
-                <span style="font-size:0.62rem;color:var(--text-sec)">Next: Vet visit</span>
-                <div class="fp-tag">Fri</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p>Pet care is a team effort. Invite family members and caregivers to share pet profiles so everyone stays on the same page.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- =========================================================
-     HOW IT WORKS
-     ========================================================= -->
-<section class="how-it-works section" id="how-it-works" aria-label="How It Works">
+<!-- HOW IT WORKS -->
+<section class="section how-it-works" id="how-it-works">
   <div class="container">
     <div class="text-center fade-in">
-      <div class="section-tag">How It Works</div>
-      <h2 class="section-heading">Get started in 3 simple steps</h2>
-      <p class="section-sub">PetMyPet is designed to be as easy as a belly rub. Here's how to get going in minutes.</p>
+      <h2 style="font-size: 3rem; margin-bottom: 16px;">Get started in 3 simple steps</h2>
+      <p style="font-size: 1.2rem; color: var(--text-sec); max-width: 600px; margin: 0 auto 60px;">PetMyPet is designed to be as easy as a belly rub. Here's how to get going in minutes.</p>
     </div>
-    <div class="steps-grid">
-      <div class="step-card fade-in fade-in-delay-1">
+    <div class="steps-container">
+      <div class="step-item fade-in">
         <div class="step-number">1</div>
-        <div class="step-icon" aria-hidden="true">🐾</div>
-        <h3>Create your pet's profile</h3>
-        <p>Add your pet's name, species, breed, birthday, and a photo. PetMyPet supports a wide range of companions:</p>
-        <div class="step-pets">
-          <span class="step-pet-tag">🐶 Dogs</span>
-          <span class="step-pet-tag">🐱 Cats</span>
-          <span class="step-pet-tag">🐦 Birds</span>
-          <span class="step-pet-tag">🐰 Rabbits</span>
-          <span class="step-pet-tag">🐹 Hamsters</span>
-          <span class="step-pet-tag">🐠 Fish</span>
-          <span class="step-pet-tag">🦎 Reptiles</span>
-          <span class="step-pet-tag">+ more</span>
-        </div>
+        <h3>Create Profile</h3>
+        <p>Add your pet's name, species, breed, birthday, and a photo.</p>
       </div>
-      <div class="step-card fade-in fade-in-delay-2">
+      <div class="step-item fade-in fade-in-delay-1">
         <div class="step-number">2</div>
-        <div class="step-icon" aria-hidden="true">📍</div>
-        <h3>Start tracking walks &amp; health</h3>
-        <p>Tap to start a walk and watch your route come to life on the map. Log health notes, weight, medications, and vet visits — all in one place.</p>
+        <h3>Start Tracking</h3>
+        <p>Tap to start a walk and watch your route come to life on the map.</p>
       </div>
-      <div class="step-card fade-in fade-in-delay-3">
+      <div class="step-item fade-in fade-in-delay-2">
         <div class="step-number">3</div>
-        <div class="step-icon" aria-hidden="true">🤝</div>
-        <h3>Discover playmates &amp; connect</h3>
-        <p>Browse compatible pets nearby, match, and chat with their owners. Propose meetups and build your local pet community.</p>
+        <h3>Connect</h3>
+        <p>Browse compatible pets nearby, match, and chat with their owners.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- =========================================================
-     SCREENSHOT CAROUSEL
-     ========================================================= -->
-<section class="screenshots section" id="screenshots" aria-label="App Screenshots">
+<!-- SOCIAL PROOF -->
+<section class="section">
   <div class="container">
-    <div class="text-center fade-in">
-      <div class="section-tag">App Preview</div>
-      <h2 class="section-heading">A peek inside PetMyPet</h2>
-      <p class="section-sub">Beautifully designed screens that make pet care feel like a joy, not a chore.</p>
+    <div class="stats-container fade-in">
+      <div class="stat-item">
+        <span class="stat-number" data-target="10000" data-suffix="+">0</span>
+        <span class="stat-label">Walks Tracked</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="5000" data-suffix="+">0</span>
+        <span class="stat-label">Happy Pets</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="2500" data-suffix="+">0</span>
+        <span class="stat-label">Playdates</span>
+      </div>
     </div>
-  </div>
-  <div class="carousel-track-wrap" role="region" aria-label="App screenshot carousel">
-    <div class="carousel-track">
-
-      <!-- Screen 1: Home Dashboard -->
-      <div class="carousel-item">
-        <div class="carousel-phone">
-          <div class="carousel-screen">
-            <div class="carousel-notch"></div>
-            <div class="cs-title">Home 🏠</div>
-            <div class="cs-card">
-              <div class="cs-card-title">Good morning!</div>
-              <div class="cs-bar"><div class="cs-bar-fill" style="width:70%;background:var(--primary)"></div></div>
-            </div>
-            <div class="cs-card">
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-                <div style="background:var(--bg);border-radius:6px;padding:5px;border:1px solid var(--border);">
-                  <div style="font-size:0.6rem;font-weight:800;color:var(--primary)">3.2km</div>
-                  <div style="font-size:0.5rem;color:var(--text-sec)">Today</div>
-                </div>
-                <div style="background:var(--bg);border-radius:6px;padding:5px;border:1px solid var(--border);">
-                  <div style="font-size:0.6rem;font-weight:800;color:var(--primary)">🔥7</div>
-                  <div style="font-size:0.5rem;color:var(--text-sec)">Streak</div>
-                </div>
-              </div>
-            </div>
-            <div class="cs-map">🗺️</div>
-            <div class="cs-dot-row">
-              <div class="cs-dot active"></div><div class="cs-dot"></div><div class="cs-dot"></div>
-            </div>
-          </div>
+    <div class="text-center fade-in" style="margin-top: 80px;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 40px;">Loved by Pet Owners</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <div class="feature-card">
+          <p style="font-style: italic; margin-bottom: 20px;">"PetMyPet has completely changed how I care for my dog. The walk tracking is so accurate!"</p>
+          <strong>Sarah M.</strong>
         </div>
-        <div class="cs-label">Home Dashboard</div>
-      </div>
-
-      <!-- Screen 2: Live Walk Map -->
-      <div class="carousel-item">
-        <div class="carousel-phone">
-          <div class="carousel-screen">
-            <div class="carousel-notch"></div>
-            <div class="cs-title">Live Walk 🟢</div>
-            <div class="cs-map" style="height:80px;font-size:1.6rem;">🗺️</div>
-            <div class="cs-card">
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;">
-                <div style="text-align:center;">
-                  <div style="font-size:0.65rem;font-weight:800;color:var(--primary)">1.4km</div>
-                  <div style="font-size:0.5rem;color:var(--text-sec)">Distance</div>
-                </div>
-                <div style="text-align:center;">
-                  <div style="font-size:0.65rem;font-weight:800;color:var(--primary)">18m</div>
-                  <div style="font-size:0.5rem;color:var(--text-sec)">Duration</div>
-                </div>
-                <div style="text-align:center;">
-                  <div style="font-size:0.65rem;font-weight:800;color:var(--primary)">5.2</div>
-                  <div style="font-size:0.5rem;color:var(--text-sec)">km/h</div>
-                </div>
-              </div>
-            </div>
-            <div class="cs-card">
-              <div style="font-size:0.58rem;color:var(--text-sec)">☀️ 22°C · AQI: Good</div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-label">Live Walk Map</div>
-      </div>
-
-      <!-- Screen 3: Pet Profile -->
-      <div class="carousel-item">
-        <div class="carousel-phone">
-          <div class="carousel-screen">
-            <div class="carousel-notch"></div>
-            <div class="cs-title">Pet Profile 🐶</div>
-            <div style="width:50px;height:50px;border-radius:50%;background:var(--orange);margin:4px auto;display:flex;align-items:center;justify-content:center;font-size:1.4rem;">🐶</div>
-            <div style="text-align:center;font-family:Nunito,sans-serif;font-weight:800;font-size:0.75rem;color:var(--text)">Buddy</div>
-            <div style="text-align:center;font-size:0.58rem;color:var(--text-sec);margin-bottom:4px">Golden Retriever · 3 yrs · Male</div>
-            <div class="cs-card">
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;">
-                <div style="font-size:0.58rem;color:var(--text-sec)">⚖️ 4.2 kg</div>
-                <div style="font-size:0.58rem;color:var(--text-sec)">💉 Up to date</div>
-                <div style="font-size:0.58rem;color:var(--text-sec)">✂️ Neutered</div>
-                <div style="font-size:0.58rem;color:var(--text-sec)">🏥 City Vet</div>
-              </div>
-            </div>
-            <div class="cs-card">
-              <div class="cs-card-title">Total Walks</div>
-              <div style="font-size:0.72rem;font-weight:800;color:var(--primary)">142 walks · 89.4 km</div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-label">Pet Profile</div>
-      </div>
-
-      <!-- Screen 4: Health Calendar -->
-      <div class="carousel-item">
-        <div class="carousel-phone">
-          <div class="carousel-screen">
-            <div class="carousel-notch"></div>
-            <div class="cs-title">Health Calendar 📅</div>
-            <div class="cs-card">
-              <div class="cs-card-title">April 2026</div>
-              <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-top:4px;">
-                <div style="font-size:0.45rem;text-align:center;color:var(--muted)">M</div>
-                <div style="font-size:0.45rem;text-align:center;color:var(--muted)">T</div>
-                <div style="font-size:0.45rem;text-align:center;color:var(--muted)">W</div>
-                <div style="font-size:0.45rem;text-align:center;color:var(--muted)">T</div>
-                <div style="font-size:0.45rem;text-align:center;color:var(--muted)">F</div>
-                <div style="font-size:0.45rem;text-align:center;color:var(--muted)">S</div>
-                <div style="font-size:0.45rem;text-align:center;color:var(--muted)">S</div>
-                <div style="font-size:0.5rem;text-align:center;color:var(--text-sec)">1</div>
-                <div style="font-size:0.5rem;text-align:center;color:var(--text-sec)">2</div>
-                <div style="font-size:0.5rem;text-align:center;color:var(--text-sec)">3</div>
-                <div style="font-size:0.5rem;text-align:center;color:var(--text-sec)">4</div>
-                <div style="font-size:0.5rem;text-align:center;background:var(--primary);color:var(--white);border-radius:50%;width:12px;height:12px;display:flex;align-items:center;justify-content:center;margin:auto">5</div>
-                <div style="font-size:0.5rem;text-align:center;color:var(--text-sec)">6</div>
-                <div style="font-size:0.5rem;text-align:center;color:var(--text-sec)">7</div>
-              </div>
-            </div>
-            <div class="cs-card">
-              <div class="cs-card-title">Upcoming</div>
-              <div style="display:flex;flex-direction:column;gap:3px;">
-                <div style="font-size:0.58rem;color:var(--text-sec)">💉 Vaccination — Apr 5</div>
-                <div style="font-size:0.58rem;color:var(--text-sec)">✂️ Grooming — Apr 12</div>
-                <div style="font-size:0.58rem;color:var(--text-sec)">🩺 Vet check — Apr 28</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-label">Health Calendar</div>
-      </div>
-
-      <!-- Screen 5: Playdate Discovery -->
-      <div class="carousel-item">
-        <div class="carousel-phone">
-          <div class="carousel-screen">
-            <div class="carousel-notch"></div>
-            <div class="cs-title">Discover 🐕</div>
-            <div class="cs-card">
-              <div class="cs-avatar-row">
-                <div class="cs-avatar"></div>
-                <div>
-                  <div style="font-size:0.62rem;font-weight:700;color:var(--text)">Max · Labrador</div>
-                  <div style="font-size:0.55rem;color:var(--text-sec)">0.4 km · High energy</div>
-                </div>
-                <div style="margin-left:auto;background:var(--sage);color:var(--white);font-size:0.55rem;font-weight:700;padding:2px 7px;border-radius:100px;">Match</div>
-              </div>
-            </div>
-            <div class="cs-card">
-              <div class="cs-avatar-row">
-                <div class="cs-avatar sage"></div>
-                <div>
-                  <div style="font-size:0.62rem;font-weight:700;color:var(--text)">Luna · Poodle</div>
-                  <div style="font-size:0.55rem;color:var(--text-sec)">0.8 km · Playful</div>
-                </div>
-                <div style="margin-left:auto;background:var(--sage);color:var(--white);font-size:0.55rem;font-weight:700;padding:2px 7px;border-radius:100px;">Match</div>
-              </div>
-            </div>
-            <div class="cs-card">
-              <div class="cs-avatar-row">
-                <div class="cs-avatar muted"></div>
-                <div>
-                  <div style="font-size:0.62rem;font-weight:700;color:var(--text)">Coco · Beagle</div>
-                  <div style="font-size:0.55rem;color:var(--text-sec)">1.2 km · Calm</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs-label">Playdate Discovery</div>
-      </div>
-
-      <!-- Screen 6: Chat -->
-      <div class="carousel-item">
-        <div class="carousel-phone">
-          <div class="carousel-screen">
-            <div class="carousel-notch"></div>
-            <div class="cs-title">Chat 💬</div>
-            <div style="display:flex;flex-direction:column;gap:6px;flex:1;padding:4px 0;">
-              <div style="background:var(--surface);border-radius:8px 8px 8px 2px;padding:6px 8px;font-size:0.6rem;color:var(--text-sec);max-width:80%;border:1px solid var(--border)">Hey! Is Buddy free for a playdate? 🐶</div>
-              <div style="background:var(--primary);border-radius:8px 8px 2px 8px;padding:6px 8px;font-size:0.6rem;color:var(--white);max-width:80%;align-self:flex-end">Yes! How about the park at 3pm?</div>
-              <div style="background:var(--surface);border-radius:8px 8px 8px 2px;padding:6px 8px;font-size:0.6rem;color:var(--text-sec);max-width:80%;border:1px solid var(--border)">Perfect! See you there 🎾</div>
-              <div style="background:var(--primary);border-radius:8px 8px 2px 8px;padding:6px 8px;font-size:0.6rem;color:var(--white);max-width:80%;align-self:flex-end">Can't wait! 🐾</div>
-            </div>
-            <div style="background:var(--surface);border-radius:8px;padding:5px 8px;font-size:0.58rem;color:var(--muted);border:1px solid var(--border)">Type a message...</div>
-          </div>
-        </div>
-        <div class="cs-label">Chat</div>
-      </div>
-
-    </div>
-  </div>
-  <div class="carousel-nav" aria-label="Carousel navigation">
-    <button class="carousel-prev" aria-label="Previous">&#8592;</button>
-    <button class="carousel-next" aria-label="Next">&#8594;</button>
-  </div>
-</section>
-
-<!-- =========================================================
-     ACHIEVEMENTS & GAMIFICATION
-     ========================================================= -->
-<section class="achievements section" aria-label="Achievements and Gamification">
-  <div class="container">
-    <div class="text-center fade-in">
-      <div class="section-tag">Achievements</div>
-      <h2 class="section-heading">Stay motivated, every walk counts</h2>
-      <p class="section-sub">Earn badges, hit milestones, and celebrate every step of your pet care journey with fun gamification built right in.</p>
-    </div>
-    <div class="achievements-grid">
-      <div class="achievement-card fade-in fade-in-delay-1">
-        <div class="achievement-icon" aria-hidden="true">🔥</div>
-        <h4>Walk Streaks</h4>
-        <p>Keep the momentum going. Earn streak badges for walking 3, 7, 14, and 30 days in a row.</p>
-        <div class="badge-row" aria-hidden="true">
-          <div class="badge badge-sage">3</div>
-          <div class="badge badge-gold">7</div>
-          <div class="badge badge-silver">14</div>
-          <div class="badge badge-gold">30</div>
-        </div>
-      </div>
-      <div class="achievement-card fade-in fade-in-delay-2">
-        <div class="achievement-icon" aria-hidden="true">📍</div>
-        <h4>Distance Milestones</h4>
-        <p>Celebrate every kilometre. Unlock milestone badges at 10km, 50km, 100km, and beyond.</p>
-        <div class="badge-row" aria-hidden="true">
-          <div class="badge badge-sage">10</div>
-          <div class="badge badge-gold">50</div>
-          <div class="badge badge-silver">100</div>
-          <div class="badge badge-gold">🏆</div>
-        </div>
-      </div>
-      <div class="achievement-card fade-in fade-in-delay-3">
-        <div class="achievement-icon" aria-hidden="true">⚖️</div>
-        <h4>Weight Tracking Badges</h4>
-        <p>Consistency is key. Earn badges for logging your pet's weight weekly and hitting healthy goals.</p>
-        <div class="badge-row" aria-hidden="true">
-          <div class="badge badge-sage">📊</div>
-          <div class="badge badge-gold">⚖️</div>
-          <div class="badge badge-silver">🥗</div>
-        </div>
-      </div>
-      <div class="achievement-card fade-in fade-in-delay-4">
-        <div class="achievement-icon" aria-hidden="true">🤝</div>
-        <h4>Social Butterfly</h4>
-        <p>Make new friends! Earn badges for completing your first playdate and growing your pet's social circle.</p>
-        <div class="badge-row" aria-hidden="true">
-          <div class="badge badge-orange" style="background:var(--orange)">1</div>
-          <div class="badge badge-gold">5</div>
-          <div class="badge badge-silver">🌟</div>
+        <div class="feature-card">
+          <p style="font-style: italic; margin-bottom: 20px;">"The playdate feature is genius! My shy rescue pup has made two new best friends."</p>
+          <strong>James T.</strong>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- =========================================================
-     SOCIAL PROOF
-     ========================================================= -->
-<section class="social-proof section" aria-label="Social Proof and Reviews">
+<!-- WAITLIST -->
+<section class="section">
   <div class="container">
-    <div class="text-center fade-in">
-      <div class="section-tag">Loved by Pet Owners</div>
-      <h2 class="section-heading">Join thousands of happy pet families</h2>
-    </div>
-    <div class="stats-row">
-      <div class="stat-card fade-in fade-in-delay-1">
-        <div class="stat-number" data-target="10000" data-suffix="+">0</div>
-        <div class="stat-label">Walks Tracked</div>
-      </div>
-      <div class="stat-card fade-in fade-in-delay-2">
-        <div class="stat-number" data-target="5000" data-suffix="+">0</div>
-        <div class="stat-label">Happy Pets</div>
-      </div>
-      <div class="stat-card fade-in fade-in-delay-3">
-        <div class="stat-number" data-target="2500" data-suffix="+">0</div>
-        <div class="stat-label">Playdates Arranged</div>
-      </div>
-      <div class="stat-card fade-in fade-in-delay-4">
-        <div class="stat-number" data-target="98" data-suffix="%">0</div>
-        <div class="stat-label">User Satisfaction</div>
-      </div>
-    </div>
-    <div class="reviews-grid">
-      <div class="review-card fade-in fade-in-delay-1">
-        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="review-text">"PetMyPet has completely changed how I care for my dog. The walk tracking is so accurate and I love being able to share everything with my partner. We never miss a vet appointment anymore!"</p>
-        <div class="review-author">
-          <div class="review-avatar" style="background:var(--primary)">S</div>
-          <div>
-            <div class="review-name">Sarah M.</div>
-            <div class="review-sub">Dog owner · Golden Retriever</div>
-          </div>
-        </div>
-      </div>
-      <div class="review-card fade-in fade-in-delay-2">
-        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="review-text">"The playdate feature is genius! My shy rescue pup has made two new best friends thanks to the temperament matching. The app is so warm and easy to use — feels like it was made with love."</p>
-        <div class="review-author">
-          <div class="review-avatar" style="background:var(--sage)">J</div>
-          <div>
-            <div class="review-name">James T.</div>
-            <div class="review-sub">Dog owner · Rescue mix</div>
-          </div>
-        </div>
-      </div>
-      <div class="review-card fade-in fade-in-delay-3">
-        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="review-text">"As a cat owner I wasn't sure this app was for me, but the health tracking is incredible. I can log symptoms, track weight, and generate a full report for my vet in one tap. Absolutely essential."</p>
-        <div class="review-author">
-          <div class="review-avatar" style="background:var(--orange)">A</div>
-          <div>
-            <div class="review-name">Aiko R.</div>
-            <div class="review-sub">Cat owner · Two British Shorthairs</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =========================================================
-     WAITLIST
-     ========================================================= -->
-<section class="waitlist-section section text-center" id="waitlist" aria-label="Join the Waitlist">
-  <div class="container">
-    <div class="waitlist-inner fade-in">
-      <div class="section-tag" style="background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.2);color:var(--white);">Early Access</div>
-      <h2>Be the first to know when PetMyPet launches</h2>
-      <p>Join our waitlist and get exclusive early access, launch-day discounts, and a special founding member badge in the app.</p>
-      <form class="waitlist-form" aria-label="Waitlist signup">
-        <input type="email" placeholder="Enter your email address" aria-label="Email address" required />
-        <button type="submit">Join Waitlist 🐾</button>
+    <div class="waitlist-card fade-in">
+      <h2>Be the first to know</h2>
+      <p>Join our waitlist and get exclusive early access and launch-day discounts.</p>
+      <form class="waitlist-form">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit" class="btn btn-primary">Join Waitlist 🐾</button>
       </form>
-      <p class="waitlist-success" aria-live="polite">🎉 You're on the list! We'll be in touch soon.</p>
-      <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-top:16px;">No spam, ever. Unsubscribe any time.</p>
     </div>
   </div>
 </section>
 
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
-<footer class="footer" role="contentinfo">
+<!-- FOOTER -->
+<footer class="footer">
   <div class="container">
-    <div class="footer-top">
+    <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo">
-          <div class="footer-logo-icon" aria-hidden="true">🐾</div>
-          PetMyPet
-        </div>
-        <p>Walk together, track health, and treasure every moment with your pet. The all-in-one companion app for pet owners everywhere.</p>
-        <div class="footer-store-btns">
-          <a href="#" class="footer-store-btn" aria-label="Download on the App Store">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            App Store
-          </a>
-          <a href="#" class="footer-store-btn" aria-label="Get it on Google Play">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.37.2.8.22 1.2.06l12.11-6.97-2.55-2.55-10.76 9.46zM20.7 10.06L17.6 8.28 14.77 11l2.84 2.84 3.09-1.78c.88-.51.88-1.49 0-2zM2.01 1.05C1.84 1.3 1.75 1.62 1.75 2v20c0 .38.09.7.26.95l.11.1 11.2-11.2v-.26L2.12.95l-.11.1zM14.77 13.72L3.38 25.11c.4.16.83.14 1.2-.06l12.11-6.97-1.92-4.36z"/></svg>
-            Google Play
-          </a>
-        </div>
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="PetMyPet Logo" />
+        </a>
+        <p>Walk together, track health, and treasure every moment with your pet.</p>
       </div>
-      <div class="footer-col">
-        <h5>Product</h5>
+      <div>
+        <h4>Product</h4>
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#screenshots">Screenshots</a></li>
           <li><a href="#download">Download</a></li>
-          <li><a href="#waitlist">Join Waitlist</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h5>Legal &amp; Support</h5>
+      <div>
+        <h4>Legal</h4>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
           <li><a href="support.html">Support / Contact</a></li>
           <li><a href="delete-account.html">Delete Account</a></li>
         </ul>
-        <h5 style="margin-top:20px;">Follow Us</h5>
-        <div class="footer-social" aria-label="Social media links">
-          <a href="#" class="social-icon" aria-label="Instagram">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="#" class="social-icon" aria-label="Twitter / X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="#" class="social-icon" aria-label="TikTok">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-          </a>
-        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 PetMyPet. All rights reserved.</p>
-      <p>Made with 🐾 for pet lovers everywhere</p>
+    <div class="text-center" style="padding-top: 40px; border-top: 1px solid var(--border);">
+      <p style="color: var(--text-sec); font-size: 0.9rem;">&copy; 2026 PetMyPet. All rights reserved.</p>
     </div>
   </div>
 </footer>
