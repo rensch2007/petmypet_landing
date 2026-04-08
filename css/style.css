@@ -11,8 +11,6 @@
   --surface:      #F5E9DC;
   --primary:      #4B2E2B;
   --primary-hover:#6B453A;
-  --cta:          #C17D5E;
-  --cta-hover:    #A8674A;
   --muted:        #A68A7F;
   --text:         #3E2C28;
   --text-sec:     #6A5C57;
@@ -71,14 +69,14 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   white-space: nowrap;
 }
 .btn-primary {
-  background: var(--cta);
+  background: var(--primary);
   color: var(--white);
-  box-shadow: 0 8px 20px rgba(193,125,94,0.25);
+  box-shadow: 0 8px 20px rgba(75,46,43,0.2);
 }
 .btn-primary:hover {
-  background: var(--cta-hover);
+  background: var(--primary-hover);
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(193,125,94,0.35);
+  box-shadow: 0 12px 25px rgba(75,46,43,0.3);
 }
 .btn-outline {
   background: var(--white);
@@ -148,27 +146,22 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   position: relative;
 }
 .hero-inner {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .hero h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   letter-spacing: -0.02em;
-}
-.hero p {
-  font-size: 1.2rem;
-  color: var(--text-sec);
-  margin-bottom: 40px;
-  max-width: 540px;
+  max-width: 700px;
 }
 .hero-actions {
   display: flex;
   gap: 16px;
-  margin-bottom: 48px;
+  justify-content: center;
 }
 .hero-visual {
   position: relative;
@@ -307,6 +300,15 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   outline: none;
 }
 .waitlist-form input::placeholder { color: rgba(255,255,255,0.5); }
+.waitlist-card .btn-primary {
+  background: var(--white);
+  color: var(--primary);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.waitlist-card .btn-primary:hover {
+  background: var(--surface);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
 
 /* --- Footer --- */
 .footer {
@@ -578,6 +580,64 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .testimonial-info span {
   font-size: 0.85rem;
   color: var(--text-sec);
+}
+
+/* --- Featured Testimonial --- */
+.testimonial-featured {
+  background: var(--white);
+  padding: 56px 72px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.testimonial-featured::before {
+  content: '\201C';
+  font-family: 'Quicksand', serif;
+  font-size: 10rem;
+  color: var(--orange);
+  opacity: 0.15;
+  position: absolute;
+  top: -20px;
+  left: 32px;
+  line-height: 1;
+  pointer-events: none;
+}
+.testimonial-featured .testimonial-text {
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 24px;
+  color: var(--text);
+  font-weight: 500;
+  position: relative;
+}
+.testimonial-featured .testimonial-author {
+  justify-content: center;
+}
+
+/* --- Star Rating --- */
+.testimonial-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 16px;
+  color: var(--orange);
+}
+.testimonial-featured .testimonial-stars {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* --- Compact 2-col Grid --- */
+.testimonials-grid-compact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 /* --- Step Connectors --- */
@@ -861,10 +921,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
-  .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 48px; }
-  .hero p { margin-left: auto; margin-right: auto; }
-  .hero-actions { justify-content: center; flex-wrap: wrap; }
-  .hero-visual { order: -1; }
   .steps-container { grid-template-columns: 1fr; gap: 40px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-top { grid-template-columns: 1fr 1fr; }
@@ -889,25 +945,20 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .hamburger { display: flex; }
 
   /* Hero mobile */
-  .hero { padding: 120px 0 48px; }
-  .hero h1 { font-size: clamp(1.8rem, 7vw, 2.5rem); }
-  .hero p { font-size: 1rem; margin-bottom: 28px; }
+  .hero { padding: 120px 0 40px; }
+  .hero h1 { font-size: clamp(1.8rem, 7vw, 2.5rem); margin-bottom: 24px; }
   .hero-badge { font-size: 0.82rem; padding: 8px 16px; }
-  .hero-actions { gap: 12px; }
-  .hero-actions .btn { padding: 14px 24px; font-size: 0.95rem; width: 100%; }
-  .hero-phone-container::after { width: 110%; height: 110%; }
-  .phone-mockup { width: 220px; border-width: 3px; border-radius: 32px; padding: 8px; }
-  .phone-screen { min-height: 360px; padding: 12px; border-radius: 24px; }
-  .phone-notch { width: 80px; height: 5px; margin-bottom: 14px; }
-  .phone-ui { gap: 10px; }
-  .phone-ui-title { font-size: 0.95rem; }
-  .phone-ui-map { height: 100px; }
-  .phone-ui-stat { padding: 10px; }
-  .phone-ui-stat-val { font-size: 1rem; }
+  .hero-actions .btn { padding: 14px 28px; font-size: 0.95rem; }
 
   /* Section headings mobile */
   .section-heading { font-size: clamp(1.6rem, 6vw, 2rem); }
   .section-subtext { font-size: 1rem; margin-bottom: 40px; }
+
+  /* Featured testimonial mobile */
+  .testimonial-featured { padding: 36px 24px; }
+  .testimonial-featured .testimonial-text { font-size: 1.1rem; }
+  .testimonial-featured::before { font-size: 6rem; left: 12px; top: -12px; }
+  .testimonials-grid-compact { grid-template-columns: 1fr; gap: 16px; }
 
   /* Features mobile */
   .features-grid { grid-template-columns: 1fr; gap: 20px; margin-top: 32px; }
@@ -932,10 +983,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .waitlist-form { flex-direction: column; border-radius: 16px; gap: 10px; }
   .waitlist-form input { padding: 14px 20px; text-align: center; }
   .waitlist-form button { width: 100%; }
-
-  /* Stats mobile */
-  .stats-container { flex-direction: column; align-items: center; gap: 24px; margin-bottom: 48px; }
-  .stat-number { font-size: 2.5rem; }
 
   /* Footer mobile */
   .footer { padding: 60px 0 32px; }
