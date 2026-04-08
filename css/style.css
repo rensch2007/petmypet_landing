@@ -137,12 +137,12 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   color: var(--text-sec);
 }
 .nav a:hover { color: var(--primary); }
+.nav a.btn { color: var(--white); }
+.nav a.btn:hover { color: var(--white); }
 
 /* --- Hero --- */
 .hero {
   padding: 180px 0 100px;
-  background: radial-gradient(circle at 80% 20%, rgba(243,185,127,0.15) 0%, transparent 40%),
-              radial-gradient(circle at 10% 80%, rgba(169,179,136,0.1) 0%, transparent 40%);
   position: relative;
 }
 .hero-inner {
@@ -212,11 +212,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 }
 
 /* --- How It Works --- */
-.how-it-works {
-  background: var(--surface);
-  border-radius: 60px;
-  margin: 0 20px;
-}
+.how-it-works {}
 .steps-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -640,6 +636,63 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   gap: 30px;
 }
 
+/* --- Feature Carousel --- */
+.carousel-section {
+  padding: 60px 0 80px;
+  overflow: hidden;
+}
+.carousel-wrapper {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: carousel-scroll 35s linear infinite;
+}
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+@keyframes carousel-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.carousel-card {
+  flex-shrink: 0;
+  width: 320px;
+  background: var(--white);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+.carousel-card:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--primary);
+}
+.carousel-card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--surface);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.carousel-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-family: 'Quicksand', sans-serif;
+}
+.carousel-card p {
+  font-size: 0.92rem;
+  color: var(--text-sec);
+  line-height: 1.6;
+}
+
 /* --- Step Connectors --- */
 @media (min-width: 1025px) {
   .step-item { position: relative; }
@@ -960,6 +1013,11 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .testimonial-featured::before { font-size: 6rem; left: 12px; top: -12px; }
   .testimonials-grid-compact { grid-template-columns: 1fr; gap: 16px; }
 
+  /* Carousel mobile */
+  .carousel-section { padding: 40px 0 60px; }
+  .carousel-card { width: 280px; padding: 24px; }
+  .carousel-track { gap: 16px; }
+
   /* Features mobile */
   .features-grid { grid-template-columns: 1fr; gap: 20px; margin-top: 32px; }
   .feature-card { padding: 28px; }
@@ -967,7 +1025,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .feature-card h3 { font-size: 1.25rem; }
 
   /* How it works mobile */
-  .how-it-works { border-radius: 32px; margin: 0 8px; padding: 48px 0; }
   .steps-container { margin-top: 40px; gap: 28px; }
   .step-number { width: 48px; height: 48px; font-size: 1.2rem; }
 
