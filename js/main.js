@@ -74,30 +74,6 @@ if (counterEls.length) {
   counterEls.forEach(el => counterObserver.observe(el));
 }
 
-// --- Carousel Drag Scroll ---
-const carouselWrap = document.querySelector('.carousel-track-wrap');
-if (carouselWrap) {
-  let isDown = false, startX, scrollLeft;
-  carouselWrap.addEventListener('mousedown', e => {
-    isDown = true;
-    startX = e.pageX - carouselWrap.offsetLeft;
-    scrollLeft = carouselWrap.scrollLeft;
-  });
-  carouselWrap.addEventListener('mouseleave', () => { isDown = false; });
-  carouselWrap.addEventListener('mouseup', () => { isDown = false; });
-  carouselWrap.addEventListener('mousemove', e => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - carouselWrap.offsetLeft;
-    carouselWrap.scrollLeft = scrollLeft - (x - startX) * 1.5;
-  });
-  // Arrow nav
-  const prevBtn = document.querySelector('.carousel-prev');
-  const nextBtn = document.querySelector('.carousel-next');
-  if (prevBtn) prevBtn.addEventListener('click', () => { carouselWrap.scrollBy({ left: -240, behavior: 'smooth' }); });
-  if (nextBtn) nextBtn.addEventListener('click', () => { carouselWrap.scrollBy({ left: 240, behavior: 'smooth' }); });
-}
-
 // --- Waitlist Forms ---
 document.querySelectorAll('.waitlist-form, .hero-waitlist').forEach(form => {
   form.addEventListener('submit', e => {
@@ -113,8 +89,8 @@ document.querySelectorAll('.waitlist-form, .hero-waitlist').forEach(form => {
       setTimeout(() => { successEl.style.display = 'none'; }, 4000);
     } else {
       const msg = document.createElement('p');
-      msg.textContent = "🎉 You're on the list! We'll be in touch.";
-      msg.style.cssText = 'color:#A9B388;font-weight:700;font-family:Nunito,sans-serif;margin-top:12px;';
+      msg.textContent = "You're on the list! We'll be in touch.";
+      msg.style.cssText = 'color:#A9B388;font-weight:700;font-family:Quicksand,sans-serif;margin-top:12px;';
       form.after(msg);
       setTimeout(() => msg.remove(), 4000);
     }
